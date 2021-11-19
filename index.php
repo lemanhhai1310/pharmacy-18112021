@@ -10,7 +10,7 @@
                 <div class="uk-width-expand">
                     <div class="uk-grid-24 uk-grid-25-m uk-flex-middle" uk-grid>
                         <div class="uk-width-expand">
-                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+                            <div class="home__slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
                                 <ul class="uk-slideshow-items">
                                     <li>
@@ -24,8 +24,8 @@
                                     </li>
                                 </ul>
 
-                                <a class="uk-position-center-left uk-position-small uk-hidden-hover1" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                                <a class="uk-position-center-right uk-position-small uk-hidden-hover1" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                                <a class="home__slider__nav home__slider__nav--prev uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                <a class="home__slider__nav home__slider__nav--next uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
                             </div>
                         </div>
