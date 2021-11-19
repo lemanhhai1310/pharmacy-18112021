@@ -1,0 +1,54 @@
+.home{
+  &__section{
+    padding-bottom: 40px;
+    @include media-breakpoint-up('m'){
+      padding-top: 24px;
+      padding-bottom: 60px;
+    }
+  }
+  &__item40{
+    &:nth-child(n+2){
+      margin-top: 30px;
+      @include media-breakpoint-up('m'){
+        margin-top: 40px;
+      }
+    }
+  }
+  &__banner{
+    &__width{
+      @include media-breakpoint-up('m'){
+        width: 190px;
+        box-sizing: content-box;
+      }
+    }
+    &__grid{
+      @include media-breakpoint-down('s'){
+        overflow-x: auto;
+      }
+      &::-webkit-scrollbar{
+        display: none;
+      }
+    }
+    &__column{
+
+    }
+    &__card{
+      .uk-first-column> &{
+        @include media-breakpoint-down('s'){
+          margin-left: 15px;
+        }
+      }
+      .home__banner__column:last-child &{
+        @include media-breakpoint-down('s'){
+          margin-right: 15px;
+        }
+      }
+      background: #C4C4C4;
+      border-radius: 8px;
+      min-width: 240px;
+      @include media-breakpoint-up('m'){
+        min-width: inherit;
+      }
+    }
+  }
+}
