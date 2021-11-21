@@ -8,3 +8,91 @@
     }
   }
 }
+.modal{
+  &__wishList{
+    &__title{
+      margin-top: 0;
+      margin-bottom: 9px;
+      color: #212121;
+      line-height: (36/24);
+      @extend .fz-24;
+      font-family: $font-Mulish-Bold;
+    }
+    &__desc{
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: #888888;
+      line-height: (21/14);
+      @extend .fz-14;
+    }
+    &__box{
+      @include media-breakpoint-up('m'){
+        padding: 24px;
+        //padding-top: 56px;
+        padding-left: 30px;
+      }
+    }
+    &__mask{
+      width: 28%;
+      background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+      @include media-breakpoint-up('m'){
+
+      }
+    }
+    &__item{
+      &:nth-child(n+2){
+        margin-top: 16px;
+      }
+    }
+    &__form{
+      &__input{
+        border-color: #EEEEEE;
+        border-radius: 4px;
+        @extend .fz-14;
+        font-family: $font-Mulish-Regular;
+        color: #212121;
+        &::placeholder{
+          color: #888888;
+        }
+        &:focus{
+          &::placeholder{
+            //opacity: 0;
+          }
+        }
+      }
+      &__btnSelect{
+        position: relative;
+        text-align: left;
+        padding-left: 10px;
+        text-transform: inherit;
+
+        border-color: #EEEEEE;
+        border-radius: 4px;
+        @extend .fz-14;
+        font-family: $font-Mulish-Regular;
+        color: #212121;
+        .uk-icon{
+          right: 6px;
+          background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.53516 7.19531C6.78125 7.44141 7.19141 7.44141 7.4375 7.19531L12.7695 1.89062C13.0156 1.61719 13.0156 1.20703 12.7695 0.960938L12.1406 0.332031C11.8945 0.0859375 11.4844 0.0859375 11.2109 0.332031L7 4.54297L2.76172 0.332031C2.48828 0.0859375 2.07812 0.0859375 1.83203 0.332031L1.20312 0.960938C0.957031 1.20703 0.957031 1.61719 1.20312 1.89062L6.53516 7.19531Z' fill='%23212121'/%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-position: center;
+          svg{
+            opacity: 0;
+          }
+        }
+      }
+      &__btnSend{
+        background: #52B4F3;
+        border-radius: 8px;
+        color: #FFFFFF;
+        text-transform: inherit;
+        min-width: 190px;
+        >*{
+          line-height: (21/14);
+          @extend .fz-14;
+          font-family: $font-Mulish-SemiBold;
+        }
+      }
+    }
+  }
+}

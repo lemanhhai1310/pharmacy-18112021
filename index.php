@@ -66,8 +66,60 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
+                <div id="modal-wishList" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-dialog-m uk-modal-body uk-padding-remove">
+                        <button class="uk-modal-close-default header__bottom__close" type="button" uk-close></button>
+                        <div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse uk-flex-middle" uk-grid>
+                            <div>
+                                <div class="uk-cover-container">
+                                    <img class="uk-visible@m" src="images/bg_wishList.png" alt="" uk-cover>
+                                    <img class="uk-hidden@m" src="images/bg_wishList_mb.png" alt="" uk-cover>
+                                    <canvas class="uk-visible@m" width="385" height="433"></canvas>
+                                    <canvas class="uk-hidden@m" width="344" height="172"></canvas>
+                                    <div class="modal__wishList__mask uk-position-right"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-padding-small modal__wishList__box">
+                                    <h2 class="uk-modal-title modal__wishList__title">Quan tâm</h2>
+                                    <p class="modal__wishList__desc">Vui lòng điền các thông tin bên dưới để đánh dấu quan tâm và chúng tôi được phục vụ bạn tốt hơn</p>
+                                    <form>
+                                        <fieldset class="uk-fieldset">
+                                            <div class="modal__wishList__item">
+                                                <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                                    <select>
+                                                        <option value="">Danh xưng</option>
+                                                        <option value="1">Ông (Mr.)</option>
+                                                        <option value="2">Bà (Mrs.)</option>
+                                                    </select>
+                                                    <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
+                                                        <span></span>
+                                                        <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="modal__wishList__item">
+                                                <input class="uk-input modal__wishList__form__input" type="text" placeholder="Họ tên">
+                                            </div>
+                                            <div class="modal__wishList__item">
+                                                <input class="uk-input modal__wishList__form__input" type="text" placeholder="Số điện thoại">
+                                            </div>
+                                            <div class="modal__wishList__item">
+                                                <input class="uk-input modal__wishList__form__input" type="text" placeholder="Email">
+                                            </div>
+                                            <div class="modal__wishList__item uk-text-center uk-text-left@m">
+                                                <button type="button" class="uk-button uk-button-default modal__wishList__form__btnSend"><span>Gửi</span></button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <script>
-                    UIkit.modal('#modal-quickView').show();
+                    // UIkit.modal('#modal-quickView').show();
+                    // UIkit.modal('#modal-wishList').show();
                 </script>
                 <div class="uk-child-width-1-2 uk-grid-match uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-5@l uk-grid-small uk-grid-30-m" uk-grid>
                     <?php
@@ -133,7 +185,7 @@
                                             <div>
                                                 <a href="#modal-quickView" uk-toggle class="home__product__card__stock__icon home__product__card__stock__icon--quick uk-border-circle"></a>
                                                 <a href="" class="home__product__card__stock__icon home__product__card__stock__icon--cart uk-border-circle"></a>
-                                                <a href="javascript:void(0)" class="home__product__card__stock__icon home__product__card__stock__icon--wishList uk-border-circle"></a>
+                                                <a href="#modal-wishList" uk-toggle class="home__product__card__stock__icon home__product__card__stock__icon--wishList uk-border-circle"></a>
                                             </div>
                                         </div>
                                         <?php else: ?>
