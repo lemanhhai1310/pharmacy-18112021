@@ -108,7 +108,7 @@
                                                 <input class="uk-input modal__wishList__form__input" type="text" placeholder="Email">
                                             </div>
                                             <div class="modal__wishList__item uk-text-center uk-text-left@m">
-                                                <button type="button" class="uk-button uk-button-default modal__wishList__form__btnSend"><span>Gửi</span></button>
+                                                <button onclick="wishListNotification()" type="button" class="uk-button uk-button-default modal__wishList__form__btnSend"><span>Gửi</span></button>
                                             </div>
                                         </fieldset>
                                     </form>
@@ -120,6 +120,18 @@
                 <script>
                     // UIkit.modal('#modal-quickView').show();
                     // UIkit.modal('#modal-wishList').show();
+                    const notiDefault1 = '<div class="notification__content notification__content--success">' +
+                        '<div class="notification__content__txt">Gửi yêu cầu tư vấn thành công. Chúng tôi sẽ liên hệ quý khách trong thời gian sớm nhất.</div>' +
+                        '</div>';
+                    const wishListNotification = () => {
+                        UIkit.notification({
+                            message: notiDefault1,
+                            status: 'success',
+                            pos: 'bottom-left',
+                            timeout: 5000
+                        });
+                        UIkit.modal('#modal-wishList').hide();
+                    }
                 </script>
                 <div class="uk-child-width-1-2 uk-grid-match uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-5@l uk-grid-small uk-grid-30-m" uk-grid>
                     <?php
@@ -170,6 +182,7 @@
                     $isPrice = rand(true,false);
                     $price = array('27.000đ','49.000đ','310.000đ','17.500đ','250.000đ','320.000đ','19.000đ','32.000đ');
                     $percent = array(20,40,60,80,100);
+                    $label = array('new','hot','sale','notSale');
                     ?>
                     <div class="home__product__column">
                         <div class="uk-card home__product__card uk-transition-toggle">
@@ -188,6 +201,27 @@
                                                 <a href="#modal-wishList" uk-toggle class="home__product__card__stock__icon home__product__card__stock__icon--wishList uk-border-circle"></a>
                                             </div>
                                         </div>
+
+                                        <?php
+                                        $x = $label[array_rand($label)];
+                                        switch ($x){
+                                            case 'new': ?>
+                                            <span class="home__product__card__label uk-border-pill uk-position-top-left uk-label uk-label-success">Mới</span>
+                                            <?php break; ?>
+
+                                            <?php case 'hot': ?>
+                                            <span class="home__product__card__label uk-border-pill uk-position-top-left uk-label uk-label-warning">Hot</span>
+                                            <?php break; ?>
+
+                                            <?php case 'sale': ?>
+                                            <span class="home__product__card__label uk-border-pill uk-position-top-left uk-label uk-label-danger">-10%</span>
+                                            <?php break; ?>
+
+                                            <?php default: ?>
+
+                                        <?php } ?>
+
+
                                         <?php else: ?>
                                         <div class="uk-position-cover home__product__card__outStock uk-flex uk-flex-middle uk-flex-center">
                                             <div class="home__product__card__outStock__label uk-border-pill"><span>Hết hàng</span></div>

@@ -82,6 +82,7 @@
         border-radius: 8px 8px 0 0;
         background: rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(12px);
+        z-index: 1;
         &__icon{
           display: inline-block;
           width: 44px;
@@ -138,6 +139,23 @@
             @extend .fz-16;
             line-height: (24/16);
           }
+        }
+      }
+      &__label{
+        top: 10px;
+        left: 10px;
+        text-transform: inherit;
+        @extend .fz-14;
+        font-family: $font-Mulish-Regular;
+        color: #FFFFFF;
+        &.uk-label-success{
+          background-color: #7BB98D;
+        }
+        &.uk-label-danger{
+          background-color: #E44248;
+        }
+        &.uk-label-warning{
+          background-color: #EAB757;
         }
       }
       &__price{
