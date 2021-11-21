@@ -41,7 +41,9 @@
     padding: 12px 16px;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
     &--success{
-      max-width: 343px;
+      @include media-breakpoint-up('m'){
+        max-width: 343px;
+      }
       background: #EBF5EC;
     }
     &__txt{
