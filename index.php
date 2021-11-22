@@ -102,10 +102,10 @@
                                                 <input class="uk-input modal__wishList__form__input" type="text" placeholder="Họ tên">
                                             </div>
                                             <div class="modal__wishList__item">
-                                                <input class="uk-input modal__wishList__form__input" type="text" placeholder="Số điện thoại">
+                                                <input class="uk-input modal__wishList__form__input" type="tel" placeholder="Số điện thoại">
                                             </div>
                                             <div class="modal__wishList__item">
-                                                <input class="uk-input modal__wishList__form__input" type="text" placeholder="Email">
+                                                <input class="uk-input modal__wishList__form__input" type="email" placeholder="Email">
                                             </div>
                                             <div class="modal__wishList__item uk-text-center uk-text-left@m">
                                                 <button onclick="wishListNotification()" type="button" class="uk-button uk-button-default modal__wishList__form__btnSend"><span>Gửi</span></button>

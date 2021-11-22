@@ -142,8 +142,14 @@
         }
       }
       &__label{
-        top: 10px;
-        left: 10px;
+        $x:8px;
+        top: #{$x};
+        left: #{$x};
+        @include media-breakpoint-up('m'){
+          $x:10px;
+          top: #{$x};
+          left: #{$x};
+        }
         text-transform: inherit;
         @extend .fz-14;
         font-family: $font-Mulish-Regular;
