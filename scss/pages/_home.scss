@@ -45,6 +45,15 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 24px;
     padding-bottom: 16px;
+    &--switch{
+      margin-bottom: 16px;
+      @include media-breakpoint-up('m'){
+        margin-bottom: 24px;
+      }
+    }
+    &__mbSwitch{
+      margin-bottom: 24px;
+    }
     &__switch{
       >li{
         >a{
