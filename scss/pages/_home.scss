@@ -330,4 +330,36 @@
       }
     }
   }
+  &__tuvan{
+    &__card{
+      margin: 0 -15px;
+      //min-height: 310px;
+      padding: 15px;
+      @include media-breakpoint-up('m'){
+        border-radius: 8px;
+        padding: 24px 125px;
+      }
+    }
+    &__title{
+      margin-bottom: 16px;
+      line-height: (54/36);
+      @extend .fz-36;
+      color: #FFFFFF;
+      font-family: $font-Mulish-Bold;
+    }
+    &__desc{
+      margin: 0;
+      line-height: (21/14);
+      @extend .fz-14;
+      color: #FFFFFF;
+      font-family: $font-Mulish-Regular;
+    }
+    &__column{
+      &.uk-grid-margin{
+        @include media-breakpoint-up('m'){
+          margin-top: 16px !important;
+        }
+      }
+    }
+  }
 }
