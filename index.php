@@ -60,10 +60,117 @@
             <!--Nổi bật-->
             <div class="home__item40">
                 <div id="modal-quickView" uk-modal>
-                    <div class="uk-modal-dialog uk-modal-dialog-m uk-modal-body">
+                    <div class="uk-modal-dialog uk-modal-dialog-m uk-modal-body modal__quickView__body">
                         <button class="uk-modal-close-default header__bottom__close" type="button" uk-close></button>
-                        <h2 class="uk-modal-title">Default</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-37-m" uk-grid>
+                            <div>
+                                <div class="uk-position-relative uk-visible-toggle uk-slideshow" tabindex="-1" uk-slideshow="ratio: 1:1;animation: fade;">
+
+                                    <div class="uk-position-relative modal__quickView__left__imgFor modal__wishList__item">
+                                        <ul class="uk-slideshow-items" style="min-height: 436px;">
+                                            <?php for ($i=0;$i<=6;$i++): ?>
+                                            <li tabindex="-1">
+                                                <div class="">
+                                                    <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                                </div>
+                                            </li>
+                                            <?php endfor; ?>
+                                        </ul>
+                                    </div>
+
+                                    <div class="uk-slider modal__wishList__item" uk-slider="">
+
+                                        <div class="uk-position-relative">
+
+                                            <div class="uk-slider-container">
+                                                <ul class="uk-thumbnav uk-slider-items uk-child-width-1-4 uk-grid-small uk-grid-16-m uk-grid" uk-grid="" style="transform: translate3d(-111.875px, 0px, 0px);">
+                                                    <?php for ($i=0;$i<=6;$i++): ?>
+                                                    <li uk-slideshow-item="<?= $i ?>" tabindex="-1">
+                                                        <div class="uk-cover-container modal__quickView__left__img">
+                                                            <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                                            <canvas width="100" height="100"></canvas>
+                                                        </div>
+                                                    </li>
+                                                    <?php endfor; ?>
+                                                </ul>
+                                            </div>
+
+                                            <div class="">
+                                                <a class="modal__quickView__nav modal__quickView__nav--prev uk-position-center-left uk-position-small uk-icon uk-slidenav-previous uk-slidenav" href="#" uk-slidenav-previous="" uk-slider-item="previous"><svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 "></polyline></svg></a>
+                                                <a class="modal__quickView__nav modal__quickView__nav--next uk-position-center-right uk-position-small uk-icon uk-slidenav-next uk-slidenav" href="#" uk-slidenav-next="" uk-slider-item="next"><svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 "></polyline></svg></a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="modal__wishList__item">
+                                    <div class="uk-child-width-auto uk-grid-small" uk-grid>
+                                        <div>
+                                            <div class="uk-position-relative uk-display-inline-block home__product__card__rate">
+                                                <i class="home__product__card__rate__icon home__product__card__rate__star-o"></i>
+                                                <i class="home__product__card__rate__icon home__product__card__rate__star-o"></i>
+                                                <i class="home__product__card__rate__icon home__product__card__rate__star-o"></i>
+                                                <i class="home__product__card__rate__icon home__product__card__rate__star-o"></i>
+                                                <i class="home__product__card__rate__icon home__product__card__rate__star-o"></i>
+                                                <div class="uk-position-cover uk-text-nowrap uk-position-z-index uk-overflow-hidden" style="width: 100%">
+                                                    <i class="home__product__card__rate__icon home__product__card__rate__star"></i>
+                                                    <i class="home__product__card__rate__icon home__product__card__rate__star"></i>
+                                                    <i class="home__product__card__rate__icon home__product__card__rate__star"></i>
+                                                    <i class="home__product__card__rate__icon home__product__card__rate__star"></i>
+                                                    <i class="home__product__card__rate__icon home__product__card__rate__star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="modal__quickView__desc">(1 đánh giá)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__wishList__item">
+                                    <h2 class="uk-modal-title modal__quickView__title">Hand Creams for Dry, Sensitive Skin</h2>
+                                    <div class="modal__quickView__price">55.000đ</div>
+                                </div>
+                                <div class="modal__wishList__item">
+                                    <p class="modal__quickView__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="modal__wishList__item">
+                                    <div class="modal__quickView__box1">
+                                        <div class="modal__wishList__item">
+                                            <div class="uk-child-width-auto uk-grid-small uk-flex-middle" uk-grid>
+                                                <div>
+                                                    <div class="modal__quickView__label">Số lượng:</div>
+                                                </div>
+                                                <div>
+                                                    <div class="uk-position-relative">
+                                                        <a href="javascript: void(0)" class="modal__quickView__btnCount modal__quickView__btnCount--minues"></a>
+                                                        <a href="javascript: void(0)" class="modal__quickView__btnCount modal__quickView__btnCount--plus"></a>
+                                                        <input class="uk-input uk-form-width-small modal__quickView__input" type="text" placeholder="" value="1">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-expand">
+                                                    <button type="button" class="modal__quickView__addCart uk-button uk-button-default uk-border-rounded"><span>Thêm giỏ hàng</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal__wishList__item">
+                                            <div class="modal__quickView__label">Thành tiền: <span>55.000đ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__wishList__item">
+                                    <h3 class="uk-h3 modal__quickView__titleTag">Tags:</h3>
+                                    <div class="modal__quickView__boxTag">
+                                        <a href="" class="uk-button uk-button-default uk-button-small uk-border-pill">Kem</a>
+                                        <a href="" class="uk-button uk-button-default uk-button-small uk-border-pill">Bôi</a>
+                                        <a href="" class="uk-button uk-button-default uk-button-small uk-border-pill">Dưỡng da</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="modal-wishList" uk-modal>
