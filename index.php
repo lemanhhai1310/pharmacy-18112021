@@ -406,9 +406,56 @@
 
             <!--banner-->
             <div class="home__item40">
-
+                <div class="uk-child-width-1-4@m uk-grid-small uk-grid-30-m" uk-grid>
+                    <div>
+                        <div class="uk-cover-container">
+                            <img src="images/baner1.jpg" alt="" uk-cover>
+                            <canvas width="600" height="300"></canvas>
+                            <a href="" class="uk-position-cover"></a>
+                        </div>
+                    </div>
+                    <div class="uk-visible@m">
+                        <div class="uk-cover-container">
+                            <img src="images/baner2.jpg" alt="" uk-cover>
+                            <canvas width="600" height="300"></canvas>
+                            <a href="" class="uk-position-cover"></a>
+                        </div>
+                    </div>
+                    <div class="uk-visible@m">
+                        <div class="uk-cover-container">
+                            <img src="images/baner3.jpg" alt="" uk-cover>
+                            <canvas width="600" height="300"></canvas>
+                            <a href="" class="uk-position-cover"></a>
+                        </div>
+                    </div>
+                    <div class="uk-visible@m">
+                        <div class="uk-cover-container">
+                            <img src="images/baner4.jpg" alt="" uk-cover>
+                            <canvas width="600" height="300"></canvas>
+                            <a href="" class="uk-position-cover"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--/banner-->
+
+            <!--bán chạy, mới,khác-->
+            <div class="home__item40">
+
+            </div>
+            <!--/bán chạy, mới,khác-->
+
+            <div class="home__item40">
+
+            </div>
+
+            <div class="home__item40">
+
+            </div>
+
+            <div class="home__item40">
+
+            </div>
         </div>
     </div>
 </div>
