@@ -241,6 +241,9 @@
         color: #FFFFFF;
         text-transform: inherit;
         min-width: 190px;
+        .home__tuvan__card &{
+          width: 100%;
+        }
         >*{
           line-height: (21/14);
           @extend .fz-14;

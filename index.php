@@ -617,7 +617,7 @@
                                 <div class="uk-width-1-1 home__tuvan__column">
                                     <textarea class="uk-textarea modal__wishList__form__input" rows="5" placeholder="Lời nhắn *"></textarea>
                                 </div>
-                                <div class="uk-width-1-1 home__tuvan__column">
+                                <div class="uk-width-1-2@s home__tuvan__column">
                                     <button onclick="wishListNotification()" type="button" class="uk-button uk-button-default modal__wishList__form__btnSend"><span>Gửi</span></button>
                                 </div>
                             </form>
