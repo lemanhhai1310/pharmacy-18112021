@@ -59,6 +59,27 @@
         <div class="uk-container">
             <!--Nổi bật-->
             <div class="home__item40">
+                <div class="home__header">
+                    <div class="uk-flex-middle uk-grid-24-m" uk-grid>
+                        <div class="uk-width-auto">
+                            <h3 class="uk-h3 home__header__title">Nổi bật</h3>
+                        </div>
+                        <div class="uk-width-expand">
+                            <div class="uk-child-width-auto uk-flex-middle uk-flex-right uk-flex-between@m" uk-grid>
+                                <div>
+                                    <a href="" class="home__header__link uk-button uk-button-default uk-border-pill"><span>Xem tất cả</span></a>
+                                </div>
+                                <div class="uk-visible@m">
+                                    <ul class="uk-subnav uk-subnav-pill home__header__switch uk-grid-16" uk-grid uk-switcher="connect: .switcher-container">
+                                        <li><a href="#">Hãng A</a></li>
+                                        <li><a href="#">Hãng B</a></li>
+                                        <li><a href="#">Hãng C</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="modal-quickView" uk-modal>
                     <div class="uk-modal-dialog uk-modal-dialog-m uk-modal-body modal__quickView__body">
                         <button class="uk-modal-close-default header__bottom__close" type="button" uk-close></button>
