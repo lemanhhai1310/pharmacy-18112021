@@ -24,6 +24,49 @@
 <body class="">
 <?php
 $isLogin = rand(true,false);
+$data = array(
+    array(
+        'src' => 'images/spnoibat/img1.png',
+        'title' => 'Solgar ESTER 250 PLUS Kapsul 500MG A50',
+    ),
+    array(
+        'src' => 'images/spnoibat/img2.png',
+        'title' => 'Hand Creams for Dry, Sensitive Skin',
+    ),
+    array(
+        'src' => 'images/spnoibat/img3.png',
+        'title' => 'EllaOne Film-Coated tablet Contraception',
+    ),
+    array(
+        'src' => 'images/spnoibat/img4.png',
+        'title' => 'Ibuprofen 150mg Capsule',
+    ),
+    array(
+        'src' => 'images/spnoibat/img5.png',
+        'title' => 'Bioderma Atoderm Intensive Gel 250ml',
+    ),
+    array(
+        'src' => 'images/spnoibat/img6.png',
+        'title' => 'Ibuprofen 250mg capsules x18',
+    ),
+    array(
+        'src' => 'images/spnoibat/img7.png',
+        'title' => 'VICHY LIFTACTIV Supreme Serum 10 30ML',
+    ),
+    array(
+        'src' => 'images/spnoibat/img8.png',
+        'title' => 'Ibuprofen 500mg Capsule',
+    ),
+    array(
+        'src' => 'images/spnoibat/img9.png',
+        'title' => 'Film-coated tablet 250 mg 30 pieces',
+    ),
+    array(
+        'src' => 'images/spnoibat/img10.png',
+        'title' => 'Cetirizine 25mg Film-coated Tablets',
+    ),
+);
+shuffle($data);
 ?>
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <!--menumobile-->
@@ -160,12 +203,12 @@ $isLogin = rand(true,false);
                     <!--/search-->
 
                     <!--quantam-->
-                    <a href="" class="uk-navbar-item uk-hidden@m">
+                    <a href="quantam.php" class="uk-navbar-item uk-hidden@m">
                         <div class="header__bottom__box2 header__bottom__box2--wishList"></div>
                     </a>
                     <div class="uk-navbar-item header__bottom__marginLeft uk-visible@m">
                         <div class="header__bottom__box1 header__bottom__box1--wishList">
-                            <div class="header__bottom__box1__txt1"><a class="uk-link-toggle" href="">Quan tâm</a></div>
+                            <div class="header__bottom__box1__txt1"><a class="uk-link-toggle" href="quantam.php">Quan tâm</a></div>
                             <div class="header__bottom__box1__txt2">0 sản phẩm</div>
                         </div>
                     </div>

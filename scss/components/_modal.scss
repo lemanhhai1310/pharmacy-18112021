@@ -86,6 +86,9 @@
       }
     }
     &__addCart{
+      .quantam__section &{
+        width: inherit;
+      }
       overflow: hidden;
       width: 100%;
       background: #52B4F3;
