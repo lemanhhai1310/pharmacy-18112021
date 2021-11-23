@@ -87,7 +87,9 @@
     }
     &__addCart{
       .quantam__section &{
-        width: inherit;
+        @include media-breakpoint-up('m'){
+          width: inherit;
+        }
       }
       overflow: hidden;
       width: 100%;

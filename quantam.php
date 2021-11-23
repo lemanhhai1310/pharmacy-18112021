@@ -18,7 +18,7 @@ require "template-parts/layouts/breadcrumb.php";
         <h1 class="uk-h1 quantam__title">Quan tâm</h1>
         <div class="uk-grid-30" uk-grid>
             <div class="uk-width-expand">
-                <div class="uk-card uk-card-body quantam__card">
+                <div class="uk-card uk-card-body quantam__card uk-table-responsive">
                     <table class="uk-table uk-table-divider uk-table-middle quantam__table">
                         <thead>
                         <tr>
