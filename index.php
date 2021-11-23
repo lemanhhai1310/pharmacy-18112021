@@ -5,7 +5,8 @@
         <div class="uk-container uk-padding-remove">
             <div class="uk-grid-30-m uk-grid-match" uk-grid>
                 <div class="uk-width-1-4@m uk-visible@m">
-                    <div class="uk-card uk-card-default uk-card-body">
+                    <div class="uk-card uk-card-default uk-padding-small home__danhmuc">
+                        <h3 class="uk-h3 home__danhmuc__title">Danh mục</h3>
 
                     </div>
                 </div>
