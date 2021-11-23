@@ -91,7 +91,7 @@ shuffle($data);
                 </ul>
             </li>
             <li><a href="">Tuyển dụng</a></li>
-            <li><a href="">Liên hệ</a></li>
+            <li><a href="lienhe.php">Liên hệ</a></li>
             <li><a href="">FAQ</a></li>
         </ul>
         <div class="uk-text-center header__offcanvas__boxLang">
@@ -153,7 +153,7 @@ shuffle($data);
                             </div>
                         </li>
                         <li><a href="#">Tuyển dụng</a></li>
-                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="lienhe.php">Liên hệ</a></li>
                         <li><a href="#">FAQ</a></li>
                     </ul>
                 </div>

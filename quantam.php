@@ -16,10 +16,10 @@ require "template-parts/layouts/breadcrumb.php";
 <div class="quantam__section" uk-height-viewport="offset-top: true;offset-bottom: true">
     <div class="uk-container">
         <h1 class="uk-h1 quantam__title">Quan tâm</h1>
-        <div class="uk-grid-30" uk-grid>
+        <div class="uk-grid-30-m uk-grid-24" uk-grid>
             <div class="uk-width-expand">
                 <div class="uk-card uk-card-body quantam__card uk-table-responsive">
-                    <table class="uk-table uk-table-divider uk-table-middle quantam__table">
+                    <table class="uk-table uk-table-divider uk-table-middle uk-table-hover quantam__table">
                         <thead>
                         <tr>
                             <th class="uk-table-expand">Sản phẩm</th>
@@ -71,7 +71,7 @@ require "template-parts/layouts/breadcrumb.php";
                 </div>
                 <a href="" class="quantam__btnBack uk-button uk-button-default"><span>Tiếp tục mua hàng</span></a>
             </div>
-            <div class="uk-width-1-3@m uk-visible@m">
+            <div class="uk-width-1-3@m">
                 <div class="home__header">
                     <div class="uk-flex-middle uk-grid-24-m" uk-grid>
                         <div class="uk-width-auto">

@@ -46,6 +46,15 @@
         text-transform: inherit;
         background: #EEEEEE;
       }
+      td{
+        padding-left: 0;
+        padding-right: 0;
+        @include media-breakpoint-up('m'){
+          $x:12px;
+          padding-left: #{$x};
+          padding-right: #{$x};
+        }
+      }
     }
     &__close{
       display: inline-block;

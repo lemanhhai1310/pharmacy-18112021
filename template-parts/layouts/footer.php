@@ -52,7 +52,7 @@
                                 <li><a href="">Tin hoạt động Poke</a></li>
                                 <li><a href="">Thông tin y dược</a></li>
                                 <li><a href="">Tuyển dụng</a></li>
-                                <li><a href="">Liên hệ</a></li>
+                                <li><a href="lienhe.php">Liên hệ</a></li>
                                 <li><a href="">FAQ</a></li>
                             </ul>
                         </div>
