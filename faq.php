@@ -17,7 +17,7 @@ require "template-parts/layouts/breadcrumb.php";
     <div class="uk-container">
         <h1 class="uk-h1 lienhe__section3__title">Câu hỏi thường gặp</h1>
         <p class="lienhe__section3__desc">Giải đáp thắc mắc của quý khách bằng cách tìm kiếm hoặc xem các câu hỏi theo chủ đề</p>
-        <div class="uk-grid-16 uk-grid-30-m" uk-grid>
+        <div class="uk-grid-24 uk-grid-30-m" uk-grid>
             <div class="uk-width-1-3@m">
                 <div class="uk-position-relative header__bottom__search">
                     <input class="uk-input uk-border-pill header__bottom__search__input" type="text" placeholder="Bạn cần tìm gì">

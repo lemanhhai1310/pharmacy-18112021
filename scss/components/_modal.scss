@@ -239,6 +239,11 @@
             opacity: 0;
           }
         }
+        .catalog__section &{
+          @include media-breakpoint-up('m'){
+            min-width: 182px;
+          }
+        }
       }
       &__btnSend{
         background: #52B4F3;

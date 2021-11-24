@@ -81,7 +81,7 @@ shuffle($data);
         </div>
         <ul class="header__offcanvas__nav uk-nav-default uk-nav-parent-icon" uk-nav="toggle: .header__offcanvas__nav__arrow">
             <li class="uk-active"><a href="#">Về chúng tôi</a></li>
-            <li><a href="">Sản phẩm</a></li>
+            <li><a href="catalog.php">Sản phẩm</a></li>
             <li class="uk-parent">
                 <a href="#">Tin tức</a>
                 <i class="header__offcanvas__nav__arrow"></i>
@@ -142,7 +142,7 @@ shuffle($data);
                 <div class="uk-navbar-left">
                     <ul class="uk-navbar-nav">
                         <li><a href="#">Về chúng tôi</a></li>
-                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="catalog.php">Sản phẩm</a></li>
                         <li>
                             <a href="#">Tin tức</a>
                             <div class="uk-navbar-dropdown header__dropdown">
