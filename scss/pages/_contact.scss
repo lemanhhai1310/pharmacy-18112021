@@ -38,10 +38,14 @@
       line-height: (54/36);
       @extend .fz-36;
       font-family: $font-Mulish-Bold;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
+      @include media-breakpoint-up('m'){
+        margin-bottom: 16px;
+      }
     }
     &__desc{
       @extend .lienhe__section2__card__desc;
+      margin-top: 0;
       margin-bottom: 16px;
     }
     &__form{

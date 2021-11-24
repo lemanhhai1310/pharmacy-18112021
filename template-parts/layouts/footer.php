@@ -53,7 +53,7 @@
                                 <li><a href="">Thông tin y dược</a></li>
                                 <li><a href="">Tuyển dụng</a></li>
                                 <li><a href="lienhe.php">Liên hệ</a></li>
-                                <li><a href="">FAQ</a></li>
+                                <li><a href="faq.php">FAQ</a></li>
                             </ul>
                         </div>
                         <div class="uk-width-expand">

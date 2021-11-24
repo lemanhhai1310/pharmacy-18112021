@@ -92,7 +92,7 @@ shuffle($data);
             </li>
             <li><a href="">Tuyển dụng</a></li>
             <li><a href="lienhe.php">Liên hệ</a></li>
-            <li><a href="">FAQ</a></li>
+            <li><a href="faq.php">FAQ</a></li>
         </ul>
         <div class="uk-text-center header__offcanvas__boxLang">
             <div class="header__top__language" tabindex="0" aria-expanded="true">
@@ -154,7 +154,7 @@ shuffle($data);
                         </li>
                         <li><a href="#">Tuyển dụng</a></li>
                         <li><a href="lienhe.php">Liên hệ</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="faq.php">FAQ</a></li>
                     </ul>
                 </div>
 

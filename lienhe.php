@@ -167,7 +167,4 @@ require "template-parts/layouts/breadcrumb.php";
         </div>
     </div>
 </div>
-<div hidden class="" uk-height-viewport="offset-top: true;offset-bottom: true">
-
-</div>
 <?php require "template-parts/layouts/footer.php"; ?>
