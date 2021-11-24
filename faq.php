@@ -19,10 +19,7 @@ require "template-parts/layouts/breadcrumb.php";
         <p class="lienhe__section3__desc">Giải đáp thắc mắc của quý khách bằng cách tìm kiếm hoặc xem các câu hỏi theo chủ đề</p>
         <div class="uk-grid-24 uk-grid-30-m" uk-grid>
             <div class="uk-width-1-3@m">
-                <div class="uk-position-relative header__bottom__search">
-                    <input class="uk-input uk-border-pill header__bottom__search__input" type="text" placeholder="Bạn cần tìm gì">
-                    <button type="button" class="header__bottom__search__btn uk-button uk-button-default uk-position-center-right"></button>
-                </div>
+                <?php require "template-parts/layouts/search.php"; ?>
                 <ul class="uk-tab-left faq__tab" uk-tab="connect: #component-tab-left-faq; animation: uk-animation-fade">
                     <li><a href="#">Thanh toán</a></li>
                     <li><a href="#">Vận chuyển</a></li>

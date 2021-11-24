@@ -74,10 +74,7 @@ shuffle($data);
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close header__bottom__close header__bottom__close--text" type="button" uk-close></button>
         <div class="" style="margin-bottom: 16px">
-            <div class="uk-position-relative header__bottom__search">
-                <input class="uk-input uk-border-pill header__bottom__search__input" type="text" placeholder="Bạn cần tìm gì">
-                <button type="button" class="header__bottom__search__btn uk-button uk-button-default uk-position-center-right"></button>
-            </div>
+            <?php require "template-parts/layouts/search.php"; ?>
         </div>
         <ul class="header__offcanvas__nav uk-nav-default uk-nav-parent-icon" uk-nav="toggle: .header__offcanvas__nav__arrow">
             <li class="uk-active"><a href="#">Về chúng tôi</a></li>
@@ -195,10 +192,7 @@ shuffle($data);
                 <div class="uk-navbar-right">
                     <!--search-->
                     <div class="uk-navbar-item uk-visible@m">
-                        <div class="uk-position-relative header__bottom__search">
-                            <input class="uk-input uk-border-pill header__bottom__search__input" type="text" placeholder="Bạn cần tìm gì">
-                            <button type="button" class="header__bottom__search__btn uk-button uk-button-default uk-position-center-right"></button>
-                        </div>
+                        <?php require "template-parts/layouts/search.php"; ?>
                     </div>
                     <!--/search-->
 
