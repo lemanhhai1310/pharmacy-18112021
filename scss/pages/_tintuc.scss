@@ -1,0 +1,53 @@
+.tintuc{
+  &__section{
+    padding-top: 24px;
+    padding-bottom: 40px;
+    background: #F8F8F8;
+    @include media-breakpoint-up('m'){
+      padding-bottom: 60px;
+    }
+  }
+  &__title{
+    color: #212121;
+    line-height: (36/24);
+    @extend .fz-24;
+    font-family: $font-Mulish-Bold;
+    @include media-breakpoint-up('m'){
+      margin-bottom: 24px;
+    }
+  }
+  &__column{
+    &.uk-grid-margin{
+      @include media-breakpoint-up('m'){
+        margin-top: 24px !important;
+      }
+    }
+  }
+  &__box1{
+    margin-top: 24px;
+  }
+  &__card{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    overflow: hidden;
+    &__body{
+      padding: 16px;
+    }
+    &__title{
+      line-height: (27/18);
+      @extend .fz-18;
+      font-family: $font-Mulish-Bold;
+      margin-bottom: 12px;
+      a{
+        color: #212121;
+      }
+    }
+    &__desc{
+      color: #888888;
+      line-height: (21/14);
+      @extend .fz-14;
+      margin-top: 16px;
+    }
+  }
+}

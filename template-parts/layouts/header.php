@@ -80,11 +80,11 @@ shuffle($data);
             <li class="uk-active"><a href="#">Về chúng tôi</a></li>
             <li><a href="catalog.php">Sản phẩm</a></li>
             <li class="uk-parent">
-                <a href="#">Tin tức</a>
+                <a href="tintuc.php">Tin tức</a>
                 <i class="header__offcanvas__nav__arrow"></i>
                 <ul class="uk-nav-sub">
-                    <li><a href="#">Tin hoạt động Poke</a></li>
-                    <li><a href="#">Thông tin y dược</a></li>
+                    <li><a href="tintuc.php">Tin hoạt động Poke</a></li>
+                    <li><a href="tintuc.php">Thông tin y dược</a></li>
                 </ul>
             </li>
             <li><a href="">Tuyển dụng</a></li>
@@ -141,11 +141,11 @@ shuffle($data);
                         <li><a href="#">Về chúng tôi</a></li>
                         <li><a href="catalog.php">Sản phẩm</a></li>
                         <li>
-                            <a href="#">Tin tức</a>
+                            <a href="tintuc.php">Tin tức</a>
                             <div class="uk-navbar-dropdown header__dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li><a href="#">Tin hoạt động Poke</a></li>
-                                    <li><a href="#">Thông tin y dược</a></li>
+                                    <li><a href="tintuc.php">Tin hoạt động Poke</a></li>
+                                    <li><a href="tintuc.php">Thông tin y dược</a></li>
                                 </ul>
                             </div>
                         </li>

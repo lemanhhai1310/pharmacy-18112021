@@ -48,8 +48,8 @@
                             <h5 class="uk-h5 footer__center__title">Chức năng</h5>
                             <ul class="uk-list footer__center__list uk-list-bullet">
                                 <li><a href="">Về chúng tôi</a></li>
-                                <li><a href="">Sản phẩm</a></li>
-                                <li><a href="">Tin hoạt động Poke</a></li>
+                                <li><a href="catalog.php">Sản phẩm</a></li>
+                                <li><a href="tintuc.php">Tin hoạt động Poke</a></li>
                                 <li><a href="">Thông tin y dược</a></li>
                                 <li><a href="">Tuyển dụng</a></li>
                                 <li><a href="lienhe.php">Liên hệ</a></li>
