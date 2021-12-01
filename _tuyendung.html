@@ -1,10 +1,855 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
+    <script src="/__prepros.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Pharmacy - Tuyển dụng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style.css?v=1638354701">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js?v=1638354701"></script>
 </head>
-<body>
+<body class="">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
 
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--menumobile-->
+<div id="offcanvas-menumobile" class="header__offcanvas" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close header__bottom__close header__bottom__close--text" type="button" uk-close></button>
+        <div class="" style="margin-bottom: 16px">
+            <form action="ketquasearch.php" class="uk-position-relative header__bottom__search">
+                <input class="uk-input uk-border-pill header__bottom__search__input" type="text" placeholder="Bạn cần tìm gì">
+                <button type="submit" class="header__bottom__search__btn uk-button uk-button-default uk-position-center-right"></button>
+            </form>        </div>
+        <ul class="header__offcanvas__nav uk-nav-default uk-nav-parent-icon" uk-nav="toggle: .header__offcanvas__nav__arrow">
+            <li class="uk-active"><a href="#">Về chúng tôi</a></li>
+            <li><a href="catalog.php">Sản phẩm</a></li>
+            <li class="uk-parent">
+                <a href="tintuc.php">Tin tức</a>
+                <i class="header__offcanvas__nav__arrow"></i>
+                <ul class="uk-nav-sub">
+                    <li><a href="tintuc.php">Tin hoạt động Poke</a></li>
+                    <li><a href="tintuc.php">Thông tin y dược</a></li>
+                </ul>
+            </li>
+            <li><a href="tuyendung.php">Tuyển dụng</a></li>
+            <li><a href="lienhe.php">Liên hệ</a></li>
+            <li><a href="faq.php">FAQ</a></li>
+        </ul>
+        <div class="uk-text-center header__offcanvas__boxLang">
+            <div class="header__top__language" tabindex="0" aria-expanded="true">
+                <span>Tiếng Việt</span>
+            </div>
+            <div class="uk-navbar-dropdown header__dropdown" uk-dropdown="mode: click;pos:bottom-center">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="#">Tiếng Việt</a></li>
+                    <li><a href="#">Tiếng Anh</a></li>
+                    <li><a href="#">Tiếng Nhật</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/menumobile-->
+<!--acc-->
+<div id="offcanvas-acc" class="header__offcanvas" uk-offcanvas="overlay: true;flip: true">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close header__bottom__close header__bottom__close--text" type="button" uk-close></button>
+        <ul class="header__offcanvas__nav uk-nav-default uk-nav-parent-icon" uk-nav="toggle: .header__offcanvas__nav__arrow">
+            <li><a href="#">Đăng nhập</a></li>
+            <li><a href="">Đăng ký</a></li>
+        </ul>
+    </div>
+</div>
+<!--/acc-->
+<!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <!--header-->
+    <div class="header">
+        <!--header__top-->
+        <div class="header__top uk-visible@m">
+            <div class="uk-container">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="catalog.php">Sản phẩm</a></li>
+                            <li>
+                                <a href="tintuc.php">Tin tức</a>
+                                <div class="uk-navbar-dropdown header__dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="tintuc.php">Tin hoạt động Poke</a></li>
+                                        <li><a href="tintuc.php">Thông tin y dược</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="tuyendung.php">Tuyển dụng</a></li>
+                            <li><a href="lienhe.php">Liên hệ</a></li>
+                            <li><a href="faq.php">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <!--language-->
+                        <div class="uk-navbar-item">
+                            <div class="header__top__language">
+                                <span>Tiếng Việt</span>
+                            </div>
+                            <div class="uk-navbar-dropdown header__dropdown" uk-dropdown="mode: hover">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Tiếng Việt</a></li>
+                                    <li><a href="#">Tiếng Anh</a></li>
+                                    <li><a href="#">Tiếng Nhật</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/language-->
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+        <!--/header__top-->
+
+        <!--header__bottom-->
+        <div class="header__bottom" uk-sticky>
+            <div class="uk-container uk-padding-remove">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                    <div class="uk-navbar-left">
+                        <a href="#offcanvas-menumobile" class="uk-navbar-item uk-hidden@m" uk-toggle>
+                            <div class="header__bottom__box2 header__bottom__box2--menu"></div>
+                        </a>
+                        <a href="." class="uk-navbar-item uk-logo"><img src="images/logo_h.png" alt=""></a>
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <!--search-->
+                        <div class="uk-navbar-item uk-visible@m">
+                            <form action="ketquasearch.php" class="uk-position-relative header__bottom__search">
+                                <input class="uk-input uk-border-pill header__bottom__search__input" type="text" placeholder="Bạn cần tìm gì">
+                                <button type="submit" class="header__bottom__search__btn uk-button uk-button-default uk-position-center-right"></button>
+                            </form>                    </div>
+                        <!--/search-->
+
+                        <!--quantam-->
+                        <a href="quantam.php" class="uk-navbar-item uk-hidden@m">
+                            <div class="header__bottom__box2 header__bottom__box2--wishList"></div>
+                        </a>
+                        <div class="uk-navbar-item header__bottom__marginLeft uk-visible@m">
+                            <div class="header__bottom__box1 header__bottom__box1--wishList">
+                                <div class="header__bottom__box1__txt1"><a class="uk-link-toggle" href="quantam.php">Quan tâm</a></div>
+                                <div class="header__bottom__box1__txt2">0 sản phẩm</div>
+                            </div>
+                        </div>
+                        <!--/quantam-->
+
+                        <!--giohang-->
+                        <a href="" class="uk-navbar-item uk-hidden@m">
+                            <div class="header__bottom__box2 header__bottom__box2--cart"></div>
+                        </a>
+                        <div class="uk-navbar-item header__bottom__marginLeft uk-visible@m">
+                            <div class="header__bottom__box1 header__bottom__box1--cart">
+                                <div class="header__bottom__box1__txt1"><a class="uk-link-toggle" href="">Giỏ hàng</a></div>
+                                <div class="header__bottom__box1__txt2">0 sản phẩm</div>
+                            </div>
+                        </div>
+                        <!--/giohang-->
+
+                        <!--account-->
+                        <a href="#offcanvas-acc" class="uk-navbar-item uk-hidden@m" uk-toggle>
+                            <div class="header__bottom__box2 header__bottom__box2--acc"></div>
+                        </a>
+                        <div class="uk-navbar-item header__bottom__marginLeft uk-visible@m">
+                            <div class="header__bottom__box1 header__bottom__box1--acc">
+                                <div class="header__bottom__box1__txt1">Tài khoản</div>
+                                <div class="header__bottom__box1__txt2">Đăng nhập/ đăng ký</div>
+                            </div>
+                            <div class="uk-navbar-dropdown header__dropdown" uk-dropdown="mode: hover">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Đăng nhập</a></li>
+                                    <li><a href="#">Đăng ký</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/account-->
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+        <!--/header__bottom-->
+    </div>
+    <!--/header--><!--breadcrumb-->
+    <div class="uk-section-xsmall uk-overflow-auto breadcrumb__section" uk-sticky="offset: 56;media:(max-width: 959px)">
+        <div class="uk-container uk-padding-remove">
+            <ul class="uk-breadcrumb uk-flex uk-flex-nowrap">
+                <li><a href=".">Trang chủ</a></li>
+                <li><span>Tuyển dụng</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--/breadcrumb--><div class="uk-position-relative uk-background-center-center uk-background-norepeat uk-background-cover" data-src="images/tdMaskGroup.png" uk-img>
+    <div class="uk-position-cover lienhe__section1__overlay"></div>
+    <div class="uk-section-small lienhe__section1">
+        <div class="uk-container">
+            <h1 class="uk-h1 lienhe__section1__title">Tuyển dụng</h1>
+        </div>
+    </div>
+</div>
+    <div class="tuyendung__section" uk-height-viewport="offset-top: true;offset-bottom: true">
+        <div class="uk-container">
+            <div class="home__item40">
+                <div class="uk-card tuyendung__card">
+                    <form class="uk-child-width-1-1 uk-child-width-1-4@m uk-grid-16 uk-grid-30-m uk-grid" uk-grid="">
+                        <div>
+                            <input class="uk-input modal__wishList__form__input" type="text" placeholder="Vị trí công việc">
+                        </div>
+                        <div>
+                            <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                <select>
+                                    <option value="">Chức vụ</option>
+                                    <option value="1">Ông (Mr.)</option>
+                                    <option value="2">Bà (Mrs.)</option>
+                                </select>
+                                <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
+                                    <span></span>
+                                    <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                <select>
+                                    <option value="">Địa điểm</option>
+                                    <option value="1">Ông (Mr.)</option>
+                                    <option value="2">Bà (Mrs.)</option>
+                                </select>
+                                <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
+                                    <span></span>
+                                    <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="uk-button uk-button-default modal__wishList__form__btnSend uk-width-1-1"><span>Tìm kiếm</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="home__item40">
+                <div class="footer__center__item24">
+                    <div class="footer__center__item16">
+                        <div class="uk-flex-middle" uk-grid="">
+                            <div class="uk-width-expand">
+                                <h2 class="uk-h2 tintuc__title">Các vị trí đang tuyển</h2>
+                            </div>
+                            <div class="uk-width-auto">
+                                <span class="chitiettintuc__boxComment__checkTxt">Hiển thị 5/10 kết quả</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__center__item16">
+                        <table class="uk-table uk-table-divider uk-table-middle uk-table-small uk-table-responsive tuyendung__table" uk-toggle="cls: uk-table-hover; mode: media; media: @m">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="tuyendung__table__title"><a href="">Nhân viên bán hàng</a></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__catalog"><span class="tuyendung__table__txt">Chuyên viên</span></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__map"><span class="tuyendung__table__txt">Hà Nội</span></div>
+                                </td>
+                                <td>
+                                    <span class="tuyendung__table__txt">Hạn nộp: 31/12/2020</span>
+                                </td>
+                                <td>
+                                    <a href="" class="tuyendung__table__btn uk-button uk-button-default"><span>Ứng tuyển ngay</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tuyendung__table__title"><a href="">Nhân viên bán hàng</a></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__catalog"><span class="tuyendung__table__txt">Chuyên viên</span></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__map"><span class="tuyendung__table__txt">Hà Nội</span></div>
+                                </td>
+                                <td>
+                                    <span class="tuyendung__table__txt">Hạn nộp: 31/12/2020</span>
+                                </td>
+                                <td>
+                                    <a href="" class="tuyendung__table__btn uk-button uk-button-default"><span>Ứng tuyển ngay</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tuyendung__table__title"><a href="">Nhân viên bán hàng</a></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__catalog"><span class="tuyendung__table__txt">Chuyên viên</span></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__map"><span class="tuyendung__table__txt">Hà Nội</span></div>
+                                </td>
+                                <td>
+                                    <span class="tuyendung__table__txt">Hạn nộp: 31/12/2020</span>
+                                </td>
+                                <td>
+                                    <a href="" class="tuyendung__table__btn uk-button uk-button-default"><span>Ứng tuyển ngay</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tuyendung__table__title"><a href="">Nhân viên bán hàng</a></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__catalog"><span class="tuyendung__table__txt">Chuyên viên</span></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__map"><span class="tuyendung__table__txt">Hà Nội</span></div>
+                                </td>
+                                <td>
+                                    <span class="tuyendung__table__txt">Hạn nộp: 31/12/2020</span>
+                                </td>
+                                <td>
+                                    <a href="" class="tuyendung__table__btn uk-button uk-button-default"><span>Ứng tuyển ngay</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tuyendung__table__title"><a href="">Nhân viên bán hàng</a></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__catalog"><span class="tuyendung__table__txt">Chuyên viên</span></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__map"><span class="tuyendung__table__txt">Hà Nội</span></div>
+                                </td>
+                                <td>
+                                    <span class="tuyendung__table__txt">Hạn nộp: 31/12/2020</span>
+                                </td>
+                                <td>
+                                    <a href="" class="tuyendung__table__btn uk-button uk-button-default"><span>Ứng tuyển ngay</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tuyendung__table__title"><a href="">Nhân viên bán hàng</a></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__catalog"><span class="tuyendung__table__txt">Chuyên viên</span></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__map"><span class="tuyendung__table__txt">Hà Nội</span></div>
+                                </td>
+                                <td>
+                                    <span class="tuyendung__table__txt">Hạn nộp: 31/12/2020</span>
+                                </td>
+                                <td>
+                                    <a href="" class="tuyendung__table__btn uk-button uk-button-default"><span>Ứng tuyển ngay</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tuyendung__table__title"><a href="">Nhân viên bán hàng</a></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__catalog"><span class="tuyendung__table__txt">Chuyên viên</span></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__map"><span class="tuyendung__table__txt">Hà Nội</span></div>
+                                </td>
+                                <td>
+                                    <span class="tuyendung__table__txt">Hạn nộp: 31/12/2020</span>
+                                </td>
+                                <td>
+                                    <a href="" class="tuyendung__table__btn uk-button uk-button-default"><span>Ứng tuyển ngay</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tuyendung__table__title"><a href="">Nhân viên bán hàng</a></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__catalog"><span class="tuyendung__table__txt">Chuyên viên</span></div>
+                                </td>
+                                <td>
+                                    <div class="tuyendung__table__map"><span class="tuyendung__table__txt">Hà Nội</span></div>
+                                </td>
+                                <td>
+                                    <span class="tuyendung__table__txt">Hạn nộp: 31/12/2020</span>
+                                </td>
+                                <td>
+                                    <a href="" class="tuyendung__table__btn uk-button uk-button-default"><span>Ứng tuyển ngay</span></a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="footer__center__item24">
+                    <ul class="uk-pagination uk-flex-center pagination" uk-margin>
+                        <li><a href="#"><span uk-pagination-previous></span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li class="uk-disabled"><span>...</span></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li class="uk-active"><span>7</span></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#"><span uk-pagination-next></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tuyendung__section1 uk-section uk-background-norepeat uk-background-center-center uk-background-cover" data-src="" uk-img="images/top-view-health-still-life-with-copy-space1.png">
+        <div class="uk-container uk-container-small">
+            <div class="tuyendung__section1__card uk-card uk-card-body uk-card-default">
+                <div class="footer__center__item24">
+                    <h2 class="uk-h2 tintuc__title uk-text-center">Ứng tuyển ngay</h2>
+                </div>
+                <div class="footer__center__item24">
+                    <form class="uk-grid-small uk-grid-30-m" uk-grid>
+                        <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
+                            <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                <select>
+                                    <option value="">Danh xưng *</option>
+                                    <option value="1">Ông (Mr.)</option>
+                                    <option value="2">Bà (Mrs.)</option>
+                                </select>
+                                <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
+                                    <span></span>
+                                    <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
+                            <input class="uk-input modal__wishList__form__input" type="text" placeholder="Tên người ứng tuyển *">
+                        </div>
+
+                        <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
+                            <input class="uk-input modal__wishList__form__input" type="text" placeholder="Số điện thoại *">
+                        </div>
+                        <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
+                            <input class="uk-input modal__wishList__form__input" type="text" placeholder="Email">
+                        </div>
+
+                        <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
+                            <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                <select>
+                                    <option value="">Vị trí ứng tuyển *</option>
+                                    <option value="1">Ông (Mr.)</option>
+                                    <option value="2">Bà (Mrs.)</option>
+                                </select>
+                                <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
+                                    <span></span>
+                                    <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
+                            <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                <select>
+                                    <option value="">Địa điểm ứng tuyển *</option>
+                                    <option value="1">Ông (Mr.)</option>
+                                    <option value="2">Bà (Mrs.)</option>
+                                </select>
+                                <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
+                                    <span></span>
+                                    <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="uk-width-1-1 chitiettintuc__boxComment__column">
+                            <div class="uk-width-1-1" uk-form-custom>
+                                <input type="file">
+                                <div class="tuyendung__section1__boxFile">
+                                    <span>Ấn vào đây để chọn File CV *</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1 chitiettintuc__boxComment__column">
+                            <div class="uk-text-center">
+                                <button type="button" class="uk-button uk-button-default modal__wishList__form__btnSend"><span>Gửi</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div id="footer" class="footer" data-src="images/MaskGroup__footer.png" uk-img>
+        <!--footer__top-->
+        <div class="footer__top"></div>
+        <!--/footer__top-->
+
+        <!--footer__center-->
+        <div class="footer__center uk-section-xsmall">
+            <div class="uk-container">
+                <div class="uk-grid-small uk-grid-30-m" uk-grid>
+                    <div class="uk-width-1-3@m">
+                        <div class="footer__center__item24">
+                            <figure class="uk-margin-remove"><a href=""><img src="images/logo_f.png" alt=""></a></figure>
+                        </div>
+                        <div class="footer__center__item24">
+                            <p class="footer__center__desc">If you’re in need of medicines – we’re here by your side.
+                                Stay safe and buy online!</p>
+                        </div>
+                        <div class="footer__center__item24">
+                            <ul class="uk-list footer__center__list2">
+                                <li>+(84) 534-2319</li>
+                                <li>customercare@pharmacy.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand">
+                        <h5 class="uk-h5 footer__center__title">Địa chỉ</h5>
+                        <div>
+                            <div class="footer__center__item16">
+                                <h5 class="uk-h5 footer__center__title1">Poke USA City Center</h5>
+                                <ul class="uk-list footer__center__list1 uk-list-bullet">
+                                    <li>Thứ 2 đến Chủ nhật (8h-18h)</li>
+                                    <li>45 Hudson Street Villa Rica, GA 30180</li>
+                                </ul>
+                            </div>
+                            <div class="footer__center__item16">
+                                <h5 class="uk-h5 footer__center__title1">Poke USA Old Town</h5>
+                                <ul class="uk-list footer__center__list1 uk-list-bullet">
+                                    <li>Thứ 2 đến Thứ 7 (8h-18h)</li>
+                                    <li>95 East Baker Street Union City, NJ 07087</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-2-5@m">
+                        <div class="" uk-grid>
+                            <div class="uk-width-auto@m">
+                                <h5 class="uk-h5 footer__center__title">Chức năng</h5>
+                                <ul class="uk-list footer__center__list uk-list-bullet">
+                                    <li><a href="">Về chúng tôi</a></li>
+                                    <li><a href="catalog.php">Sản phẩm</a></li>
+                                    <li><a href="tintuc.php">Tin hoạt động Poke</a></li>
+                                    <li><a href="">Thông tin y dược</a></li>
+                                    <li><a href="tuyendung.php">Tuyển dụng</a></li>
+                                    <li><a href="lienhe.php">Liên hệ</a></li>
+                                    <li><a href="faq.php">FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-expand">
+                                <h5 class="uk-h5 footer__center__title">Chính sách</h5>
+                                <ul class="uk-list footer__center__list uk-list-bullet">
+                                    <li><a href="">Chính sách thanh toán</a></li>
+                                    <li><a href="">Chính sách xử lý khiếu nại</a></li>
+                                    <li><a href="">Chính sách vận chuyển và giao nhận</a></li>
+                                    <li><a href="">Chính sách đổi trả và hoàn tiền</a></li>
+                                    <li><a href="">Chính sách bảo hành</a></li>
+                                    <li><a href="">Chính sách bảo mật thông tin</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/footer__center-->
+
+        <!--footer__bottom-->
+        <div class="footer__bottom uk-text-center">
+            <div class="uk-container">
+                <span class="footer__bottom__txtCopyright">© 2021 Pharmacy , All Rights Reserved</span>
+            </div>
+        </div>
+        <!--/footer__bottom-->
+    </div>
+    <!--/footer-->
+</div>
+<!--/app-->
+<div id="modal-quickView" uk-modal>
+    <div class="uk-modal-dialog uk-modal-dialog-m uk-modal-body modal__quickView__body">
+        <button class="uk-modal-close-default header__bottom__close" type="button" uk-close></button>
+        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-37-m" uk-grid>
+            <div>
+                <div class="uk-position-relative uk-visible-toggle uk-slideshow" tabindex="-1" uk-slideshow="ratio: 1:1;animation: fade;">
+
+                    <div class="uk-position-relative modal__quickView__left__imgFor modal__wishList__item">
+                        <ul class="uk-slideshow-items" style="min-height: 436px;">
+                            <li tabindex="-1">
+                                <div class="">
+                                    <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                </div>
+                            </li>
+                            <li tabindex="-1">
+                                <div class="">
+                                    <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                </div>
+                            </li>
+                            <li tabindex="-1">
+                                <div class="">
+                                    <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                </div>
+                            </li>
+                            <li tabindex="-1">
+                                <div class="">
+                                    <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                </div>
+                            </li>
+                            <li tabindex="-1">
+                                <div class="">
+                                    <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                </div>
+                            </li>
+                            <li tabindex="-1">
+                                <div class="">
+                                    <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                </div>
+                            </li>
+                            <li tabindex="-1">
+                                <div class="">
+                                    <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="uk-slider modal__wishList__item" uk-slider="">
+
+                        <div class="uk-position-relative">
+
+                            <div class="uk-slider-container">
+                                <ul class="uk-thumbnav uk-slider-items uk-child-width-1-4 uk-grid-small uk-grid-16-m uk-grid" uk-grid="" style="transform: translate3d(-111.875px, 0px, 0px);">
+                                    <li uk-slideshow-item="0" tabindex="-1">
+                                        <div class="uk-cover-container modal__quickView__left__img">
+                                            <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                            <canvas width="100" height="100"></canvas>
+                                        </div>
+                                    </li>
+                                    <li uk-slideshow-item="1" tabindex="-1">
+                                        <div class="uk-cover-container modal__quickView__left__img">
+                                            <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                            <canvas width="100" height="100"></canvas>
+                                        </div>
+                                    </li>
+                                    <li uk-slideshow-item="2" tabindex="-1">
+                                        <div class="uk-cover-container modal__quickView__left__img">
+                                            <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                            <canvas width="100" height="100"></canvas>
+                                        </div>
+                                    </li>
+                                    <li uk-slideshow-item="3" tabindex="-1">
+                                        <div class="uk-cover-container modal__quickView__left__img">
+                                            <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                            <canvas width="100" height="100"></canvas>
+                                        </div>
+                                    </li>
+                                    <li uk-slideshow-item="4" tabindex="-1">
+                                        <div class="uk-cover-container modal__quickView__left__img">
+                                            <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                            <canvas width="100" height="100"></canvas>
+                                        </div>
+                                    </li>
+                                    <li uk-slideshow-item="5" tabindex="-1">
+                                        <div class="uk-cover-container modal__quickView__left__img">
+                                            <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                            <canvas width="100" height="100"></canvas>
+                                        </div>
+                                    </li>
+                                    <li uk-slideshow-item="6" tabindex="-1">
+                                        <div class="uk-cover-container modal__quickView__left__img">
+                                            <img src="images/h1-product2-featured.png" alt="" uk-cover>
+                                            <canvas width="100" height="100"></canvas>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="">
+                                <a class="modal__quickView__nav modal__quickView__nav--prev uk-position-center-left uk-position-small uk-icon uk-slidenav-previous uk-slidenav" href="#" uk-slidenav-previous="" uk-slider-item="previous"><svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 "></polyline></svg></a>
+                                <a class="modal__quickView__nav modal__quickView__nav--next uk-position-center-right uk-position-small uk-icon uk-slidenav-next uk-slidenav" href="#" uk-slidenav-next="" uk-slider-item="next"><svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 "></polyline></svg></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <div class="modal__wishList__item">
+                    <div class="uk-child-width-auto uk-grid-small" uk-grid>
+                        <div>
+                            <div class="uk-position-relative uk-display-inline-block home__product__card__rate">
+                                <i class="home__product__card__rate__icon home__product__card__rate__star-o"></i>
+                                <i class="home__product__card__rate__icon home__product__card__rate__star-o"></i>
+                                <i class="home__product__card__rate__icon home__product__card__rate__star-o"></i>
+                                <i class="home__product__card__rate__icon home__product__card__rate__star-o"></i>
+                                <i class="home__product__card__rate__icon home__product__card__rate__star-o"></i>
+                                <div class="uk-position-cover uk-text-nowrap uk-position-z-index uk-overflow-hidden" style="width: 100%">
+                                    <i class="home__product__card__rate__icon home__product__card__rate__star"></i>
+                                    <i class="home__product__card__rate__icon home__product__card__rate__star"></i>
+                                    <i class="home__product__card__rate__icon home__product__card__rate__star"></i>
+                                    <i class="home__product__card__rate__icon home__product__card__rate__star"></i>
+                                    <i class="home__product__card__rate__icon home__product__card__rate__star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="modal__quickView__desc">(1 đánh giá)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__wishList__item">
+                    <h2 class="uk-modal-title modal__quickView__title">Hand Creams for Dry, Sensitive Skin</h2>
+                    <div class="modal__quickView__price">55.000đ</div>
+                </div>
+                <div class="modal__wishList__item">
+                    <p class="modal__quickView__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="modal__wishList__item">
+                    <div class="modal__quickView__box1">
+                        <div class="modal__wishList__item">
+                            <div class="uk-child-width-auto uk-grid-small uk-flex-middle" uk-grid>
+                                <div>
+                                    <div class="modal__quickView__label">Số lượng:</div>
+                                </div>
+                                <div>
+                                    <div class="uk-position-relative">
+                                        <a href="javascript: void(0)" class="modal__quickView__btnCount modal__quickView__btnCount--minues"></a>
+                                        <a href="javascript: void(0)" class="modal__quickView__btnCount modal__quickView__btnCount--plus"></a>
+                                        <input class="uk-input uk-form-width-small modal__quickView__input" type="text" placeholder="" value="1">
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <button type="button" class="modal__quickView__addCart uk-button uk-button-default uk-border-rounded"><span>Thêm giỏ hàng</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__wishList__item">
+                            <div class="modal__quickView__label">Thành tiền: <span>55.000đ</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__wishList__item">
+                    <h3 class="uk-h3 modal__quickView__titleTag">Tags:</h3>
+                    <div class="modal__quickView__boxTag">
+                        <a href="" class="uk-button uk-button-default uk-button-small uk-border-pill">Kem</a>
+                        <a href="" class="uk-button uk-button-default uk-button-small uk-border-pill">Bôi</a>
+                        <a href="" class="uk-button uk-button-default uk-button-small uk-border-pill">Dưỡng da</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-wishList" uk-modal>
+    <div class="uk-modal-dialog uk-modal-dialog-m uk-modal-body uk-padding-remove">
+        <button class="uk-modal-close-default header__bottom__close" type="button" uk-close></button>
+        <div class="uk-child-width-1-2@m uk-grid-match uk-grid-collapse uk-flex-middle" uk-grid>
+            <div>
+                <div class="uk-cover-container">
+                    <img class="uk-visible@m" src="images/bg_wishList.png" alt="" uk-cover>
+                    <img class="uk-hidden@m" src="images/bg_wishList_mb.png" alt="" uk-cover>
+                    <canvas class="uk-visible@m" width="385" height="433"></canvas>
+                    <canvas class="uk-hidden@m" width="344" height="172"></canvas>
+                    <div class="modal__wishList__mask uk-position-right"></div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-padding-small modal__wishList__box">
+                    <h2 class="uk-modal-title modal__wishList__title">Quan tâm</h2>
+                    <p class="modal__wishList__desc">Vui lòng điền các thông tin bên dưới để đánh dấu quan tâm và chúng tôi được phục vụ bạn tốt hơn</p>
+                    <form>
+                        <fieldset class="uk-fieldset">
+                            <div class="modal__wishList__item">
+                                <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                    <select>
+                                        <option value="">Danh xưng</option>
+                                        <option value="1">Ông (Mr.)</option>
+                                        <option value="2">Bà (Mrs.)</option>
+                                    </select>
+                                    <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
+                                        <span></span>
+                                        <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="modal__wishList__item">
+                                <input class="uk-input modal__wishList__form__input" type="text" placeholder="Họ tên">
+                            </div>
+                            <div class="modal__wishList__item">
+                                <input class="uk-input modal__wishList__form__input" type="tel" placeholder="Số điện thoại">
+                            </div>
+                            <div class="modal__wishList__item">
+                                <input class="uk-input modal__wishList__form__input" type="email" placeholder="Email">
+                            </div>
+                            <div class="modal__wishList__item uk-text-center uk-text-left@m">
+                                <button onclick="wishListNotification()" type="button" class="uk-button uk-button-default modal__wishList__form__btnSend"><span>Gửi</span></button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // UIkit.modal('#modal-quickView').show();
+    // UIkit.modal('#modal-wishList').show();
+    const notiDefault1 = '<div class="notification__content notification__content--success">' +
+        '<div class="notification__content__txt">Gửi yêu cầu tư vấn thành công. Chúng tôi sẽ liên hệ quý khách trong thời gian sớm nhất.</div>' +
+        '</div>';
+    const wishListNotification = () => {
+        UIkit.notification({
+            message: notiDefault1,
+            status: 'success',
+            pos: 'bottom-left',
+            timeout: 5000
+        });
+        UIkit.modal('#modal-wishList').hide();
+    }
+</script>
 </body>
 </html>
