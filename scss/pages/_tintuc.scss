@@ -3,6 +3,12 @@
     padding-top: 24px;
     padding-bottom: 40px;
     background: #F8F8F8;
+    &.chitiettintuc__section{
+      padding-top: 0;
+      @include media-breakpoint-up('m'){
+        padding-top: 24px;
+      }
+    }
     @include media-breakpoint-up('m'){
       padding-bottom: 60px;
     }

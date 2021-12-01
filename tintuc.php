@@ -79,7 +79,7 @@ require "template-parts/layouts/breadcrumb.php";
                                 <canvas width="600" height="338"></canvas>
                             </div>
                             <div class="uk-card-body tintuc__card__body">
-                                <h3 class="uk-h3 tintuc__card__title"><a href=""><?= $item['title'] ?></a></h3>
+                                <h3 class="uk-h3 tintuc__card__title"><a href="chitiettintuc.php"><?= $item['title'] ?></a></h3>
                                 <div class="home__tintuc__date">Thứ 2 ,08/07/2019</div>
                                 <p class="tintuc__card__desc line-clamp-5">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus....</p>
                             </div>
@@ -101,24 +101,7 @@ require "template-parts/layouts/breadcrumb.php";
                 </div>
             </div>
             <div class="uk-width-1-4@m">
-                <div class="uk-card tintuc__asideCard">
-                    <div class="tintuc__asideCard__item">
-                        <div class="uk-position-relative tintuc__asideCard__search">
-                            <input class="uk-input tintuc__asideCard__search__input" type="text" placeholder="Tìm kiếm">
-                            <button type="button" class="tintuc__asideCard__search__btn uk-button uk-button-default uk-position-right"></button>
-                        </div>
-                    </div>
-                    <div class="tintuc__asideCard__item">
-                        <ul class="uk-nav uk-nav-default tintuc__asideCard__nav">
-                            <li class="uk-active"><a href="#">Danh mục bài viết 1</a></li>
-                            <li><a href="#">Danh mục bài viết 2</a></li>
-                            <li><a href="#">Danh mục bài viết 3</a></li>
-                            <li><a href="#">Danh mục bài viết 4</a></li>
-                            <li><a href="#">Danh mục bài viết 5</a></li>
-                            <li><a href="#">Danh mục bài viết 6</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <?php require "template-parts/layouts/sidebar.php"; ?>
             </div>
         </div>
     </div>
