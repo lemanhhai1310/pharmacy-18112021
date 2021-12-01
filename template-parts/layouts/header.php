@@ -87,7 +87,7 @@ shuffle($data);
                     <li><a href="tintuc.php">Thông tin y dược</a></li>
                 </ul>
             </li>
-            <li><a href="">Tuyển dụng</a></li>
+            <li><a href="tuyendung.php">Tuyển dụng</a></li>
             <li><a href="lienhe.php">Liên hệ</a></li>
             <li><a href="faq.php">FAQ</a></li>
         </ul>
@@ -149,7 +149,7 @@ shuffle($data);
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="tuyendung.php">Tuyển dụng</a></li>
                         <li><a href="lienhe.php">Liên hệ</a></li>
                         <li><a href="faq.php">FAQ</a></li>
                     </ul>
