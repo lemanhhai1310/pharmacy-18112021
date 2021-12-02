@@ -81,7 +81,7 @@ require "template-parts/layouts/breadcrumb.php";
                         for ($i=0;$i<=7;$i++): ?>
                         <tr>
                             <td>
-                                <div class="tuyendung__table__title"><a href="">Nhân viên bán hàng</a></div>
+                                <div class="tuyendung__table__title"><a href="chitiettuyendung.php">Nhân viên bán hàng</a></div>
                             </td>
                             <td>
                                 <div class="tuyendung__table__catalog"><span class="tuyendung__table__txt">Chuyên viên</span></div>
