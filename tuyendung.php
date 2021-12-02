@@ -93,7 +93,7 @@ require "template-parts/layouts/breadcrumb.php";
                                 <span class="tuyendung__table__txt">Hạn nộp: 31/12/2020</span>
                             </td>
                             <td>
-                                <a href="" class="tuyendung__table__btn uk-button uk-button-default"><span>Ứng tuyển ngay</span></a>
+                                <a href="chitiettuyendung.php" class="tuyendung__table__btn uk-button uk-button-default"><span>Ứng tuyển ngay</span></a>
                             </td>
                         </tr>
                         <?php endfor; ?>

@@ -111,6 +111,7 @@
       @include media-breakpoint-up('m'){
         width: inherit;
       }
+      &.uk-active,
       &:hover{
         background: #52B4F3;
         border-color: #52B4F3;
