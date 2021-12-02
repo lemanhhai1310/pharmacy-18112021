@@ -130,6 +130,9 @@
       @extend .fz-18;
       font-family: $font-Mulish-Bold;
       margin-bottom: 12px;
+      .chitietsanpham__section &{
+        @extend .fz-24;
+      }
     }
     &__price{
       margin: 0;
@@ -137,6 +140,9 @@
       line-height: (36/24);
       @extend .fz-24;
       font-family: $font-Mulish-Bold;
+      .chitietsanpham__section &{
+        @extend .fz-36;
+      }
     }
     &__desc{
       color: #888888;

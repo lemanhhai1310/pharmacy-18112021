@@ -193,7 +193,7 @@ require "template-parts/layouts/breadcrumb.php";
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <h3 class="uk-h3 home__product__card__title"><a href=""><?= $v['title'] ?></a></h3>
+                                                        <h3 class="uk-h3 home__product__card__title"><a href="chitietsanpham.php"><?= $v['title'] ?></a></h3>
                                                     </div>
                                                 </div>
                                                 <div class="uk-width-1-1">
