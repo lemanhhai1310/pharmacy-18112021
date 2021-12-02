@@ -29,7 +29,7 @@ require "template-parts/layouts/breadcrumb.php";
                                     <h1 class="uk-h1 tintuc__title">Nhân viên bán hàng</h1>
                                 </div>
                                 <div class="uk-width-auto">
-                                    <a href="#" class="tuyendung__table__btn uk-button uk-button-default uk-active"><span>Ứng tuyển ngay</span></a>
+                                    <a href="#my-apply" uk-scroll="offset:100;" class="tuyendung__table__btn uk-button uk-button-default uk-active"><span>Ứng tuyển ngay</span></a>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +77,7 @@ require "template-parts/layouts/breadcrumb.php";
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div id="my-apply">
                             <div class="footer__center__item24">
                                 <h2 class="uk-h2 tintuc__title uk-text-center">Ứng tuyển ngay</h2>
                             </div>
