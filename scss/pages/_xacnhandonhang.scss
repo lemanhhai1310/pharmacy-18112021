@@ -1,3 +1,21 @@
 .xacnhandonhang{
-
+  &__txt1{
+    color: #888888;
+    @extend .fz-14;
+    line-height: 1.5;
+  }
+  &__edit{
+    top: 16px;
+    right: 24px;
+    color: #52B4F3;
+    @extend .fz-16;
+    line-height: 1.5;
+    font-family: $font-Mulish-Bold;
+  }
+  &__box{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
 }

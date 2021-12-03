@@ -100,7 +100,7 @@ require "template-parts/layouts/breadcrumb.php";
                             </div>
                         </div>
                         <div class="uk-width-1-1 chitiettintuc__boxComment__column">
-                            <a href="#" class="uk-button uk-button-default chitiettintuc__boxComment__btn"><span>Tiếp tục</span></a>
+                            <a href="xacnhandonhang.php" class="uk-button uk-button-default chitiettintuc__boxComment__btn"><span>Tiếp tục</span></a>
                         </div>
                     </form>
                 </div>
