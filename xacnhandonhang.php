@@ -1,4 +1,4 @@
-<?php $data["title"] = "Đặt hàng"; ?>
+<?php $data["title"] = "Xác nhận đơn hàng"; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <?php
 $databreadcrumb = array(
@@ -39,7 +39,7 @@ require "template-parts/layouts/breadcrumb.php";
                     <div class="uk-grid-small uk-grid-30-m" uk-grid>
                         <div class="uk-width-expand chitiettintuc__boxComment__column">
                             <div class="uk-padding-small xacnhandonhang__box">
-                                <table class="uk-table uk-table-divider uk-table-middle uk-table-hover quantam__table">
+                                <table class="uk-table uk-table-responsive uk-table-divider uk-table-middle uk-table-hover quantam__table">
                                     <thead>
                                     <tr>
                                         <th class="uk-table-expand">Sản phẩm</th>
@@ -128,7 +128,7 @@ require "template-parts/layouts/breadcrumb.php";
                             </div>
                         </div>
                         <div class="uk-width-1-1 chitiettintuc__boxComment__column">
-                            <a href="#" class="uk-button uk-button-default chitiettintuc__boxComment__btn"><span>Tiếp tục</span></a>
+                            <a href="thanhtoan.php" class="uk-button uk-button-default chitiettintuc__boxComment__btn"><span>Tiếp tục</span></a>
                         </div>
                     </div>
                 </div>
