@@ -117,6 +117,11 @@
       line-height: calc(#{$y} - 2px);
       text-transform: inherit;
       color: #FFFFFF;
+      .dathang__section &{
+        @include media-breakpoint-up('m'){
+          min-width: 284px;
+        }
+      }
       >*{
         @extend .fz-14;
         line-height: (21/14);

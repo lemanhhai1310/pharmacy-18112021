@@ -127,7 +127,7 @@ require "template-parts/layouts/breadcrumb.php";
                         </div>
                     </div>
                     <div class="footer__center__item24">
-                        <button type="button" class="uk-button uk-button-default modal__wishList__form__btnSend uk-width-1-1"><span>Tiến hành đặt hàng</span></button>
+                        <a href="dathang.php" class="uk-button uk-button-default modal__wishList__form__btnSend uk-width-1-1"><span>Tiến hành đặt hàng</span></a>
                     </div>
                 </div>
             </div>
