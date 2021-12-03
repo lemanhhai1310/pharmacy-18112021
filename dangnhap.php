@@ -47,7 +47,7 @@ require "template-parts/layouts/breadcrumb.php";
                             <button type="button" class="uk-button uk-button-default modal__wishList__form__btnSend uk-width-1-1"><span>Đăng nhập</span></button>
                         </div>
                         <div class="footer__center__item16">
-                            <a href="" class="quantam__btnBack uk-button uk-button-default uk-width-1-1"><span>Đăng ký</span></a>
+                            <a href="dangky.php" class="quantam__btnBack uk-button uk-button-default uk-width-1-1"><span>Đăng ký</span></a>
                         </div>
                     </div>
                 </div>
