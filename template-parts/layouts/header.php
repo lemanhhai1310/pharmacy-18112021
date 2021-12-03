@@ -121,7 +121,7 @@ shuffle($data);
         <?php else: ?>
             <ul class="header__offcanvas__nav uk-nav-default uk-nav-parent-icon" uk-nav="toggle: .header__offcanvas__nav__arrow">
                 <li><a href="dangnhap.php">Đăng nhập</a></li>
-                <li><a href="">Đăng ký</a></li>
+                <li><a href="dangky.php">Đăng ký</a></li>
             </ul>
         <?php endif; ?>
     </div>
@@ -236,7 +236,7 @@ shuffle($data);
                                     <li><a href="#">Đăng xuất</a></li>
                                 <?php else: ?>
                                     <li><a href="dangnhap.php">Đăng nhập</a></li>
-                                    <li><a href="#">Đăng ký</a></li>
+                                    <li><a href="dangky.php">Đăng ký</a></li>
                                 <?php endif; ?>
                             </ul>
                         </div>
