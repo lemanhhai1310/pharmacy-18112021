@@ -214,7 +214,7 @@ shuffle($data);
                     </a>
                     <div class="uk-navbar-item header__bottom__marginLeft uk-visible@m">
                         <div class="header__bottom__box1 header__bottom__box1--cart">
-                            <div class="header__bottom__box1__txt1"><a class="uk-link-toggle" href="">Giỏ hàng</a></div>
+                            <div class="header__bottom__box1__txt1"><a class="uk-link-toggle" href="giohang.php">Giỏ hàng</a></div>
                             <div class="header__bottom__box1__txt2">0 sản phẩm</div>
                         </div>
                     </div>
