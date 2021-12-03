@@ -149,13 +149,13 @@ require "template-parts/layouts/breadcrumb.php";
             </div>
             <div class="footer__center__item24">
                 <div class="footer__center__item16">
-                    <div class="modal__order__title1">Tạo tài khoản thành công</div>
+                    <div class="modal__order__title1">Đặt hàng thành công</div>
                 </div>
                 <div class="footer__center__item16">
-                    <div class="modal__order__txt">Vui lòng vào email để xác nhận tài khoản trước khi sử dụng các sản phẩm và dịch vụ.</div>
+                    <div class="modal__order__txt">Cám ơn quý khách đã tin tưởng sử dụng dịch vụ và sản phẩm của chúng tôi.</div>
                 </div>
                 <div class="footer__center__item16">
-                    <a href="#" uk-toggle class="uk-button uk-button-default chitiettintuc__boxComment__btn"><span>Đăng nhập</span></a>
+                    <a href="." uk-toggle class="uk-button uk-button-default chitiettintuc__boxComment__btn"><span>Quay lại trang chủ</span></a>
                 </div>
             </div>
         </div>
