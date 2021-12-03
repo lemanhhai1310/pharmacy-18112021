@@ -131,10 +131,37 @@ require "template-parts/layouts/breadcrumb.php";
                     </div>
                 </div>
                 <div class="footer__center__item24">
-                    <a href="thanhtoan.php" class="uk-button uk-button-default chitiettintuc__boxComment__btn"><span>Đặt hàng</span></a>
+                    <a href="#modal-order-success" uk-toggle class="uk-button uk-button-default chitiettintuc__boxComment__btn"><span>Đặt hàng</span></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div id="modal-order-success" uk-modal>
+    <div class="uk-modal-dialog uk-modal-dialog-s">
+        <button class="uk-modal-close-default header__bottom__close" type="button" uk-close></button>
+        <div class="uk-modal-header modal__order__header">
+            <h2 class="uk-modal-title modal__order__title">Thông báo</h2>
+        </div>
+        <div class="uk-modal-body modal__order__body uk-text-center">
+            <div class="footer__center__item24">
+                <span class="modal__order__iconSuccess"></span>
+            </div>
+            <div class="footer__center__item24">
+                <div class="footer__center__item16">
+                    <div class="modal__order__title1">Tạo tài khoản thành công</div>
+                </div>
+                <div class="footer__center__item16">
+                    <div class="modal__order__txt">Vui lòng vào email để xác nhận tài khoản trước khi sử dụng các sản phẩm và dịch vụ.</div>
+                </div>
+                <div class="footer__center__item16">
+                    <a href="#" uk-toggle class="uk-button uk-button-default chitiettintuc__boxComment__btn"><span>Đăng nhập</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // UIkit.modal('#modal-order-success').show();
+</script>
 <?php require "template-parts/layouts/footer.php"; ?>

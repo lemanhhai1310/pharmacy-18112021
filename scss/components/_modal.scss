@@ -5,6 +5,9 @@
       &-m{
         width: 800px;
       }
+      &-s{
+        width: 500px;
+      }
     }
   }
 }
@@ -266,6 +269,46 @@
           font-family: $font-Mulish-SemiBold;
         }
       }
+    }
+  }
+  &__order{
+    &__dc{
+      padding: 15px;
+      @include media-breakpoint-up('m'){
+        padding: 16px 24px;
+      }
+    }
+    &__header{
+      @extend .modal__order__dc;
+    }
+    &__body{
+      @extend .modal__order__dc;
+    }
+    &__dc1{
+      color: #212121;
+      @extend .fz-16;
+      line-height: 1.5;
+    }
+    &__title{
+      @extend .modal__order__dc1;
+      font-family: $font-Mulish-SemiBold;
+    }
+    &__title1{
+      @extend .modal__order__dc1;
+      font-family: $font-Mulish-Bold;
+    }
+    &__txt{
+      color: #888888;
+      @extend .fz-14;
+      line-height: 1.5;
+    }
+    &__iconSuccess{
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_58_20414)'%3E%3Cpath d='M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z' fill='%2332BA7C'/%3E%3Cpath d='M29.7793 58.044L50.3471 78.6118C67.3818 74.0692 80.0001 58.5487 80.0001 39.9998C80.0001 39.6213 80.0001 39.2427 80.0001 38.8642L63.8487 23.9746L29.7793 58.044Z' fill='%230AA06E'/%3E%3Cpath d='M41.0095 48.9588C42.776 50.7253 42.776 53.7537 41.0095 55.5203L37.3502 59.1796C35.5836 60.9461 32.5552 60.9461 30.7886 59.1796L14.7634 43.0282C12.9968 41.2616 12.9968 38.2332 14.7634 36.4666L18.4227 32.8073C20.1893 31.0408 23.2177 31.0408 24.9842 32.8073L41.0095 48.9588Z' fill='white'/%3E%3Cpath d='M55.0158 21.0725C56.7824 19.3059 59.8108 19.3059 61.5774 21.0725L65.2367 24.7318C67.0032 26.4983 67.0032 29.5267 65.2367 31.2933L37.4764 58.9274C35.7098 60.6939 32.6815 60.6939 30.9149 58.9274L27.2556 55.2681C25.489 53.5015 25.489 50.4731 27.2556 48.7065L55.0158 21.0725Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_58_20414'%3E%3Crect width='80' height='80' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     }
   }
 }
