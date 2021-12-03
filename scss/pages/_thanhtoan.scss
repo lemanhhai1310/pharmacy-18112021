@@ -1,3 +1,24 @@
 .thanhtoan{
-
+  &__box1{
+    @include media-breakpoint-up('m'){
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    background: #F9F9F9;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+  &__radio{
+    &:checked ~ .thanhtoan__txt{
+      color: #212121;
+      font-family: $font-Mulish-SemiBold;
+    }
+  }
+  &__txt{
+    color: #888888;
+    @extend .fz-16;
+    line-height: 1.5;
+    font-family: $font-Mulish-Regular;
+  }
 }
