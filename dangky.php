@@ -97,71 +97,71 @@ $isAddress = rand(true,false);
             </div>
         </div>
     </div>
-</div>
-<div id="modal-address" uk-modal>
-    <div class="uk-modal-dialog uk-modal-dialog-s">
-        <button class="uk-modal-close-default header__bottom__close" type="button" uk-close></button>
-        <div class="uk-modal-header modal__order__header">
-            <h2 class="uk-modal-title modal__order__title">Thêm địa chỉ nhà thuốc</h2>
-        </div>
-        <div class="uk-modal-body modal__order__body">
-            <form class="uk-grid-small uk-grid-30-m" uk-grid>
-                <div class="uk-width-1-1 chitiettintuc__boxComment__column">
-                    <input class="uk-input chitiettintuc__boxComment__input" type="text" placeholder="Tên cơ sở *">
-                </div>
-                <div class="uk-width-1-1 chitiettintuc__boxComment__column">
-                    <input class="uk-input chitiettintuc__boxComment__input" type="text" placeholder="Số nhà, ngõ/ ngách, đường (địa chỉ nhà thuốc) *">
-                </div>
+    <div id="modal-address" uk-modal>
+        <div class="uk-modal-dialog uk-modal-dialog-s">
+            <button class="uk-modal-close-default header__bottom__close" type="button" uk-close></button>
+            <div class="uk-modal-header modal__order__header">
+                <h2 class="uk-modal-title modal__order__title">Thêm địa chỉ nhà thuốc</h2>
+            </div>
+            <div class="uk-modal-body modal__order__body">
+                <form class="uk-grid-small uk-grid-30-m" uk-grid>
+                    <div class="uk-width-1-1 chitiettintuc__boxComment__column">
+                        <input class="uk-input chitiettintuc__boxComment__input" type="text" placeholder="Tên cơ sở *">
+                    </div>
+                    <div class="uk-width-1-1 chitiettintuc__boxComment__column">
+                        <input class="uk-input chitiettintuc__boxComment__input" type="text" placeholder="Số nhà, ngõ/ ngách, đường (địa chỉ nhà thuốc) *">
+                    </div>
 
-                <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
-                    <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
-                        <select>
-                            <option value="">Phường/Xã *</option>
-                            <option value="1">Ông (Mr.)</option>
-                            <option value="2">Bà (Mrs.)</option>
-                        </select>
-                        <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
-                            <span></span>
-                            <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
-                        </button>
+                    <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
+                        <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                            <select>
+                                <option value="">Phường/Xã *</option>
+                                <option value="1">Ông (Mr.)</option>
+                                <option value="2">Bà (Mrs.)</option>
+                            </select>
+                            <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
+                                <span></span>
+                                <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
-                    <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
-                        <select>
-                            <option value="">Quận/ Huyện *</option>
-                            <option value="1">Ông (Mr.)</option>
-                            <option value="2">Bà (Mrs.)</option>
-                        </select>
-                        <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
-                            <span></span>
-                            <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
-                        </button>
+                    <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
+                        <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                            <select>
+                                <option value="">Quận/ Huyện *</option>
+                                <option value="1">Ông (Mr.)</option>
+                                <option value="2">Bà (Mrs.)</option>
+                            </select>
+                            <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
+                                <span></span>
+                                <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
-                    <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
-                        <select>
-                            <option value="">Tỉnh/ Thành phố *</option>
-                            <option value="1">Ông (Mr.)</option>
-                            <option value="2">Bà (Mrs.)</option>
-                        </select>
-                        <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
-                            <span></span>
-                            <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
-                        </button>
+                    <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
+                        <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                            <select>
+                                <option value="">Tỉnh/ Thành phố *</option>
+                                <option value="1">Ông (Mr.)</option>
+                                <option value="2">Bà (Mrs.)</option>
+                            </select>
+                            <button class="modal__wishList__form__btnSelect uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">
+                                <span></span>
+                                <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="uk-width-1-2@s chitiettintuc__boxComment__column"></div>
+                    <div class="uk-width-1-2@s chitiettintuc__boxComment__column"></div>
 
-                <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
-                    <button type="button" class="quantam__btnBack uk-button uk-button-default uk-width-1-1"><span>Đăng ký</span></button>
-                </div>
-            </form>
+                    <div class="uk-width-1-2@s chitiettintuc__boxComment__column">
+                        <button type="button" class="quantam__btnBack uk-button uk-button-default uk-width-1-1"><span>Đăng ký</span></button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+    <script>
+        // UIkit.modal('#modal-address').show();
+    </script>
 </div>
-<script>
-    // UIkit.modal('#modal-address').show();
-</script>
 <?php require "template-parts/layouts/footer.php"; ?>
