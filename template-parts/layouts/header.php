@@ -116,11 +116,11 @@ shuffle($data);
             </div>
             <ul class="header__offcanvas__nav uk-nav-default uk-nav-parent-icon" uk-nav="toggle: .header__offcanvas__nav__arrow">
                 <li><a href="#">Thông tin tài khoản</a></li>
-                <li><a href="">Đăng xuất</a></li>
+                <li><a href="dangnhap.php">Đăng xuất</a></li>
             </ul>
         <?php else: ?>
             <ul class="header__offcanvas__nav uk-nav-default uk-nav-parent-icon" uk-nav="toggle: .header__offcanvas__nav__arrow">
-                <li><a href="#">Đăng nhập</a></li>
+                <li><a href="dangnhap.php">Đăng nhập</a></li>
                 <li><a href="">Đăng ký</a></li>
             </ul>
         <?php endif; ?>
@@ -235,7 +235,7 @@ shuffle($data);
                                     <li><a href="#">Thông tin tài khoản</a></li>
                                     <li><a href="#">Đăng xuất</a></li>
                                 <?php else: ?>
-                                    <li><a href="#">Đăng nhập</a></li>
+                                    <li><a href="dangnhap.php">Đăng nhập</a></li>
                                     <li><a href="#">Đăng ký</a></li>
                                 <?php endif; ?>
                             </ul>

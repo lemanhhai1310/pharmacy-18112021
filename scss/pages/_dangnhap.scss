@@ -1,0 +1,19 @@
+.dangnhap{
+  &__section{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include media-breakpoint-up('m'){
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  &__card{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    padding: 16px;
+    @include media-breakpoint-up('m'){
+      padding: 24px;
+    }
+  }
+}
