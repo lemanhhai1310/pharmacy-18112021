@@ -155,7 +155,7 @@ require "template-parts/layouts/breadcrumb.php";
                     <div class="modal__order__txt">Cám ơn quý khách đã tin tưởng sử dụng dịch vụ và sản phẩm của chúng tôi.</div>
                 </div>
                 <div class="footer__center__item16">
-                    <a href="." uk-toggle class="uk-button uk-button-default chitiettintuc__boxComment__btn"><span>Quay lại trang chủ</span></a>
+                    <a href="." class="uk-button uk-button-default chitiettintuc__boxComment__btn"><span>Quay lại trang chủ</span></a>
                 </div>
             </div>
         </div>
