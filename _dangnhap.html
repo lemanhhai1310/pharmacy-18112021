@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -12,7 +11,7 @@
     <link rel="stylesheet" href="assets/uikit-3.9.4/css/uikit.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="style.css?v=1638521005">
+    <link rel="stylesheet" href="style.css?v=1638716840">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -20,7 +19,7 @@
     <script src="assets/uikit-3.9.4/js/uikit.min.js"></script>
     <script src="assets/uikit-3.9.4/js/uikit-icons.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/app.js?v=1638521005"></script>
+    <script src="js/app.js?v=1638716840"></script>
 </head>
 <body class="">
 <!-- Load Facebook SDK for JavaScript -->
@@ -92,9 +91,12 @@
 <div id="offcanvas-acc" class="header__offcanvas" uk-offcanvas="overlay: true;flip: true">
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close header__bottom__close header__bottom__close--text" type="button" uk-close></button>
+        <div class="header__offcanvas__user">
+            <span>Anh</span>
+        </div>
         <ul class="header__offcanvas__nav uk-nav-default uk-nav-parent-icon" uk-nav="toggle: .header__offcanvas__nav__arrow">
-            <li><a href="dangnhap.php">Đăng nhập</a></li>
-            <li><a href="">Đăng ký</a></li>
+            <li><a href="#">Thông tin tài khoản</a></li>
+            <li><a href="dangnhap.php">Đăng xuất</a></li>
         </ul>
     </div>
 </div>
@@ -200,13 +202,13 @@
                         </a>
                         <div class="uk-navbar-item header__bottom__marginLeft uk-visible@m">
                             <div class="header__bottom__box1 header__bottom__box1--acc">
-                                <div class="header__bottom__box1__txt1">Tài khoản</div>
-                                <div class="header__bottom__box1__txt2">Đăng nhập/ đăng ký</div>
+                                <div class="header__bottom__box1__txt1">Anh</div>
+                                <div class="header__bottom__box1__txt2">Thông tin tài khoản</div>
                             </div>
                             <div class="uk-navbar-dropdown header__dropdown" uk-dropdown="mode: hover">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li><a href="dangnhap.php">Đăng nhập</a></li>
-                                    <li><a href="#">Đăng ký</a></li>
+                                    <li><a href="#">Thông tin tài khoản</a></li>
+                                    <li><a href="#">Đăng xuất</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -227,41 +229,43 @@
             </ul>
         </div>
     </div>
-    <!--/breadcrumb--><div class="dangnhap__section uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/health-still-life-with-copy-space1.png" uk-img uk-height-viewport="offset-top: true;offset-bottom: true">
-    <div class="uk-container">
-        <div uk-grid>
-            <div class="uk-width-1-3@m">
-                <div class="dangnhap__card uk-card uk-card-default uk-card-body">
-                    <div class="footer__center__item24">
-                        <h1 class="uk-h1 quantam__title uk-margin-remove">Đăng nhập</h1>
-                    </div>
-                    <div class="footer__center__item24">
-                        <div class="footer__center__item16">
-                            <input class="uk-input modal__wishList__form__input" type="tel" placeholder="Số điện thoại">
+    <!--/breadcrumb--><div class="dangnhap__section uk-flex uk-flex-middle uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/health-still-life-with-copy-space1.png" uk-img uk-height-viewport="offset-top: true;offset-bottom: true">
+    <div class="uk-width-1-1">
+        <div class="uk-container">
+            <div uk-grid>
+                <div class="uk-width-1-3@m">
+                    <div class="dangnhap__card uk-card uk-card-default uk-card-body">
+                        <div class="footer__center__item24">
+                            <h1 class="uk-h1 quantam__title uk-margin-remove">Đăng nhập</h1>
                         </div>
-                        <div class="footer__center__item16">
-                            <input class="uk-input modal__wishList__form__input" type="password" placeholder="Mật khẩu">
-                        </div>
-                        <div class="footer__center__item16">
-                            <div uk-grid>
-                                <div class="uk-width-expand">
-                                    <label class="chitiettintuc__boxComment__label">
-                                        <input class="uk-checkbox chitiettintuc__boxComment__check" type="checkbox" checked="">
-                                        <span class="chitiettintuc__boxComment__checkTxt">Ghi nhớ tài khoản</span>
-                                    </label>
-                                </div>
-                                <div class="uk-width-auto">
-                                    <a href="" class="xacnhandonhang__edit">Quên mật khẩu</a>
+                        <div class="footer__center__item24">
+                            <div class="footer__center__item16">
+                                <input class="uk-input modal__wishList__form__input" type="tel" placeholder="Số điện thoại">
+                            </div>
+                            <div class="footer__center__item16">
+                                <input class="uk-input modal__wishList__form__input" type="password" placeholder="Mật khẩu">
+                            </div>
+                            <div class="footer__center__item16">
+                                <div uk-grid>
+                                    <div class="uk-width-expand">
+                                        <label class="chitiettintuc__boxComment__label">
+                                            <input class="uk-checkbox chitiettintuc__boxComment__check" type="checkbox" checked="">
+                                            <span class="chitiettintuc__boxComment__checkTxt">Ghi nhớ tài khoản</span>
+                                        </label>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <a href="" class="xacnhandonhang__edit">Quên mật khẩu</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="footer__center__item24">
-                        <div class="footer__center__item16">
-                            <button type="button" class="uk-button uk-button-default modal__wishList__form__btnSend uk-width-1-1"><span>Đăng nhập</span></button>
-                        </div>
-                        <div class="footer__center__item16">
-                            <a href="" class="quantam__btnBack uk-button uk-button-default uk-width-1-1"><span>Đăng ký</span></a>
+                        <div class="footer__center__item24">
+                            <div class="footer__center__item16">
+                                <button type="button" class="uk-button uk-button-default modal__wishList__form__btnSend uk-width-1-1"><span>Đăng nhập</span></button>
+                            </div>
+                            <div class="footer__center__item16">
+                                <a href="dangky.php" class="quantam__btnBack uk-button uk-button-default uk-width-1-1"><span>Đăng ký</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
