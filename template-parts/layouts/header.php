@@ -233,7 +233,7 @@ shuffle($data);
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <?php if ($isLogin): ?>
                                     <li><a href="#">Thông tin tài khoản</a></li>
-                                    <li><a href="#">Đăng xuất</a></li>
+                                    <li><a href="dangnhap.php">Đăng xuất</a></li>
                                 <?php else: ?>
                                     <li><a href="dangnhap.php">Đăng nhập</a></li>
                                     <li><a href="dangky.php">Đăng ký</a></li>
